@@ -3,78 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Helper Portal</title>
+    <title>Chenyu & Ping Wedding Helper Lookup</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
+    <div class="container">
+        <header>
             <img src="images/Logo with Date inside.png" alt="Chenyu & Ping Wedding Logo" class="wedding-logo">
-            <div class="header-text">
-                <h1>Chenyu & Ping Wedding</h1>
-                <p class="subtitle">Helper Task Portal</p>
-            </div>
-        </div>
-    </header>
+            <h1>Chenyu & Ping Wedding</h1>
+            <p class="subtitle">Helper Task Lookup System</p>
+        </header>
 
-    <nav>
-        <ul>
-            <li><a href="#lookup">Task Lookup</a></li>
-            <li><a href="#documents">Wedding Documents</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <section id="lookup">
-            <h2>Find Your Wedding Tasks</h2>
-            <p class="welcome-text">Enter your name below to see your assigned role and tasks for Chenyu & Ping's special day</p>
-            
-            <div class="lookup-container">
+        <main>
+            <div class="search-section">
                 <div class="search-box">
-                    <input type="text" id="helperName" placeholder="Enter your full name..." autocomplete="off">
-                    <button onclick="searchHelper()" class="search-btn">Find My Tasks</button>
+                    <input type="text" id="helperName" placeholder="Enter your full name to find your tasks..." autocomplete="off">
+                    <button onclick="searchHelper()" class="search-btn">Search</button>
                 </div>
-                <div id="searchResults" class="search-results hidden">
-                    <!-- Results will be populated by JavaScript -->
-                </div>
+                <div id="searchResults" class="search-results hidden"></div>
                 <div id="noResults" class="no-results hidden">
-                    <h3>Name not found</h3>
-                    <p>Please check your spelling or contact the wedding coordinators if you believe this is an error.</p>
+                    <p>Name not found. Please check your spelling or contact the wedding coordinators.</p>
                 </div>
             </div>
-        </section>
 
-        <section id="documents">
-            <h2>Wedding Documents</h2>
-            <p>Quick access to the complete wedding information</p>
-            <div class="documents-grid">
-                <div class="document-card">
-                    <h3>📋 Full Run Sheet</h3>
-                    <p>Complete wedding day timeline and schedule</p>
-                    <button onclick="openDocument('runsheet')" class="doc-btn">View Run Sheet</button>
-                </div>
-                <div class="document-card">
-                    <h3>👥 Key Roles List</h3>
-                    <p>Complete list of all wedding helper assignments</p>
-                    <button onclick="openDocument('roles')" class="doc-btn">View Roles List</button>
+            <div class="documents-section">
+                <h2>Wedding Documents</h2>
+                <div class="document-links">
+                    <button onclick="openDocument('runsheet')" class="doc-btn">📋 Full Run Sheet</button>
                 </div>
             </div>
-        </section>
+        </main>
 
-        <section id="contact">
-            <h2>Need Help?</h2>
-            <p>If you can't find your name or have questions about your tasks, please contact the wedding coordinators.</p>
-            <div class="contact-info">
-                <p><strong>Wedding Day Coordinators</strong></p>
-                <p>For immediate assistance during the wedding</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Chenyu & Ping Wedding. Made with ❤️ for our amazing helpers.</p>
-    </footer>
+        <footer>
+            <p>&copy; 2025 Chenyu & Ping Wedding</p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
