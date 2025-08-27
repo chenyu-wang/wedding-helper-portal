@@ -8,53 +8,72 @@
 </head>
 <body>
     <header>
-        <h1>Wedding Helper Portal</h1>
-        <p>Your one-stop solution for wedding planning</p>
+        <div class="header-content">
+            <img src="images/Logo with Date inside.png" alt="Chenyu & Ping Wedding Logo" class="wedding-logo">
+            <div class="header-text">
+                <h1>Chenyu & Ping Wedding</h1>
+                <p class="subtitle">Helper Task Portal</p>
+            </div>
+        </div>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#tools">Tools</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#lookup">Task Lookup</a></li>
+            <li><a href="#documents">Wedding Documents</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <main>
-        <section id="home">
-            <h2>Welcome to Wedding Helper Portal</h2>
-            <p>Planning a wedding can be overwhelming, but we're here to help! Our portal provides various tools and resources to make your special day perfect.</p>
-        </section>
-
-        <section id="tools">
-            <h2>Wedding Planning Tools</h2>
-            <div class="tools-grid">
-                <div class="tool-card">
-                    <h3>Guest List Manager</h3>
-                    <p>Keep track of your wedding guests and RSVPs</p>
-                    <button onclick="showTool('guestlist')">Open Tool</button>
+        <section id="lookup">
+            <h2>Find Your Wedding Tasks</h2>
+            <p class="welcome-text">Enter your name below to see your assigned role and tasks for Chenyu & Ping's special day</p>
+            
+            <div class="lookup-container">
+                <div class="search-box">
+                    <input type="text" id="helperName" placeholder="Enter your full name..." autocomplete="off">
+                    <button onclick="searchHelper()" class="search-btn">Find My Tasks</button>
                 </div>
-                <div class="tool-card">
-                    <h3>Budget Tracker</h3>
-                    <p>Monitor your wedding expenses and stay on budget</p>
-                    <button onclick="showTool('budget')">Open Tool</button>
+                <div id="searchResults" class="search-results hidden">
+                    <!-- Results will be populated by JavaScript -->
                 </div>
-                <div class="tool-card">
-                    <h3>Timeline Planner</h3>
-                    <p>Create and manage your wedding day timeline</p>
-                    <button onclick="showTool('timeline')">Open Tool</button>
+                <div id="noResults" class="no-results hidden">
+                    <h3>Name not found</h3>
+                    <p>Please check your spelling or contact the wedding coordinators if you believe this is an error.</p>
                 </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>Wedding Helper Portal is designed to simplify wedding planning by providing essential tools in one convenient location. Whether you're planning an intimate ceremony or a grand celebration, our tools will help you stay organized and stress-free.</p>
+        <section id="documents">
+            <h2>Wedding Documents</h2>
+            <p>Quick access to the complete wedding information</p>
+            <div class="documents-grid">
+                <div class="document-card">
+                    <h3>📋 Full Run Sheet</h3>
+                    <p>Complete wedding day timeline and schedule</p>
+                    <button onclick="openDocument('runsheet')" class="doc-btn">View Run Sheet</button>
+                </div>
+                <div class="document-card">
+                    <h3>👥 Key Roles List</h3>
+                    <p>Complete list of all wedding helper assignments</p>
+                    <button onclick="openDocument('roles')" class="doc-btn">View Roles List</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Need Help?</h2>
+            <p>If you can't find your name or have questions about your tasks, please contact the wedding coordinators.</p>
+            <div class="contact-info">
+                <p><strong>Wedding Day Coordinators</strong></p>
+                <p>For immediate assistance during the wedding</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Wedding Helper Portal. Made with ❤️ for happy couples.</p>
+        <p>&copy; 2024 Chenyu & Ping Wedding. Made with ❤️ for our amazing helpers.</p>
     </footer>
 
     <script src="script.js"></script>
