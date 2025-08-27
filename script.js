@@ -49,6 +49,15 @@ const weddingHelpers = {
             "7:45pm - Bridesmaids speech at dinner reception",
             "9:30pm - Cut and distribute cakes to tables",
             "10:10pm - Post-dinner tidy up duties (bring extra gifts, table numbers, welcome sign, photo canvas to bridal salon)"
+        ],
+        taskDetails: [
+            "Makeup Artist: Yuko 0430239540. Coordinate with Monica Yaw and Angela Fong for arrival and makeup schedule.",
+            "Tze drives Ping & Sabrina from Westin to Cana House. Coordinate timing with Senjaya who drives mums and other bridesmaids.",
+            "Contact Like Johanes when bridal cars arrive at Cana House. Like will inform when to come into Cana House for ceremony.",
+            "Enter with other bridal party members. Follow ceremony coordinator instructions for positioning and timing.",
+            "Deliver bridesmaids speech during dinner reception. Coordinate timing with MC Daniel Gunawan.",
+            "Work with other bridal party to cut wedding cake and distribute pieces to all guest tables. Check with Nadine at venue.",
+            "Collect extra gifts, table numbers, welcome sign, and photo canvas. Bring all items to the bridal salon after dinner reception."
         ]
     },
     "Roger Chuang": {
@@ -62,6 +71,16 @@ const weddingHelpers = {
             "9:15pm - Wedding game coordination for bride and groom",
             "9:30pm - Cut and distribute cakes to tables",
             "10:10pm - Post-dinner tidy up duties"
+        ],
+        taskDetails: [
+            "Vendor: TMI Studio, Joyce Jiao 0433 555 567. Address: 2/14 Shields Cr, Booragoon. Pick up 4 matrimony pillars and drop at Cana House.",
+            "Stand with Chenyu, Ernest, and Lester at sanctuary. Coordinate timing with ceremony schedule and Like Johanes.",
+            "Unity-candle attendant role during ceremony. Assist bride and groom with candle lighting ritual.",
+            "Enter with groomsmen and other bridal party. Follow Jenny Sophian's coordination for reception entrance.",
+            "Deliver groomsmen speech and lead toast. Coordinate with MC Daniel Gunawan for timing during dinner.",
+            "Lead wedding game coordination for bride and groom entertainment. Plan and execute games during dessert service.",
+            "Work with bridal party to cut and distribute wedding cake pieces to all guest tables.",
+            "Help collect and organize extra items for cleanup. Assist with general post-dinner tidy up duties."
         ]
     },
     "Monica Yaw": {
@@ -166,6 +185,14 @@ const weddingHelpers = {
             "7:10pm - Play entrance songs for bridesmaids and groomsmen, bride and groom",
             "9:30pm - Play first dance song and couple dance songs",
             "9:40pm - Play dance song list during reception"
+        ],
+        taskDetails: [
+            "Setup sound system at Cana House sanctuary. Ensure microphones, speakers, and music system are ready for ceremony.",
+            "Setup sound system at Beaumonde on the Point dinner reception venue. Test all equipment before guests arrive.",
+            "Play background music during pre-drinks and canapes service. Coordinate volume with venue staff.",
+            "Play entrance songs for bridal party entrance. Coordinate timing with MC Daniel Gunawan and Jenny Sophian.",
+            "Play first dance song for bride and groom, then couple dance songs for married couples. Coordinate with MC announcements.",
+            "Play dance song list for general dancing. Manage volume and song selection for guest entertainment."
         ]
     },
     "Hendra Wijaya": {
@@ -201,6 +228,12 @@ const weddingHelpers = {
             "Coordinate car park team: Rudy Rusli, Rudy Suwarno, Kocdal Antipas, Tomas Aguda, Benny Suwarno, Harry Chen",
             "Reserve 5 parking bays for parents cars and bridal cars",
             "Manage parking for: White Toyota RAV4 (1HUQ923), Black Lexus RX350 (P1NGL), White Tesla Model Y (1IOD288), Grey Mitsubishi Outlander (1GYL921), White Honda Accord (1EUB613)"
+        ],
+        taskDetails: [
+            "Lead car park coordinator. Ensure all team members are in position and managing traffic flow efficiently.",
+            "Team includes: Rudy Rusli, Rudy Suwarno, Kocdal Antipas, Tomas Aguda, Benny Suwarno, Harry Chen. Coordinate positioning and guest direction.",
+            "Priority parking for family vehicles: White Toyota RAV4 (1HUQ923) - parents, Black Lexus RX350 (P1NGL) - parents.",
+            "Additional reserved parking: White Tesla Model Y (1IOD288) - bridal car, Grey Mitsubishi Outlander (1GYL921) - bridal car, White Honda Accord (1EUB613) - photographer's car."
         ]
     },
     "Rudy Rusli": {
@@ -239,6 +272,11 @@ const weddingHelpers = {
             "2:00pm - Car park usher in position",
             "Assist Didier Michel with car park coordination",
             "7:20pm - Lead grace prayer at dinner reception"
+        ],
+        taskDetails: [
+            "Car park usher team member. Follow Didier Michel's coordination and help direct guest parking at ceremony venue.",
+            "Support car park operations during ceremony. Assist with traffic flow and guest directions as needed.",
+            "Lead grace prayer at dinner reception. Wait for MC Daniel Gunawan's announcement before beginning prayer. Ensure all guests are ready."
         ]
     },
     "Harry Chen": {
@@ -257,6 +295,12 @@ const weddingHelpers = {
             "2:45pm - Ensure guests are seated",
             "Coordinate sanctuary ushering with IeChi Suen, Jacquelyn Chong, William Yong, Kok Yee Wee",
             "5:00pm - Check guest names & gifts according to seating plan map at dinner reception"
+        ],
+        taskDetails: [
+            "Lead sanctuary ushering team. Ensure all ushers (IeChi Suen, Jacquelyn Chong, William Yong, Kok Yee Wee) are positioned and ready.",
+            "Ensure all guests are seated before ceremony begins at 3:00pm. Coordinate with Like Johanes for ceremony start timing.",
+            "Primary coordinator for sanctuary ushering team. Assign positions, manage guest seating flow, and handle any seating issues.",
+            "At dinner reception, verify guest names against seating plan and check guest gifts are properly placed according to map."
         ]
     },
     "IeChi Suen": {
@@ -305,6 +349,13 @@ const weddingHelpers = {
             "2:30pm - Drive bride & maid of honour from hotel to Cana House",
             "4:30pm - Drive bride & groom from Cana to photo taking and reception",
             "6:00pm - Drive bridal party cars to dinner reception"
+        ],
+        taskDetails: [
+            "Lead transport coordinator. Coordinate timing with ceremony schedule and other drivers.",
+            "From Hotel to Cana: Tze drives Ping & Sabrina. Coordinate departure with Senjaya who drives mums, Monica and Angela.",
+            "Primary driver for bride and maid of honour. Ensure on-time arrival for ceremony preparation.",
+            "Transport bride & groom from Cana to photo location, then to Beaumonde on the Point for reception.",
+            "Final transport coordination. Tze: Bride & Groom, Senjaya: Bridal Party (7 seats car)."
         ]
     },
     "Senjaya Tresna": {
@@ -331,6 +382,11 @@ const weddingHelpers = {
             "Saturday - Sanctuary decoration with Leena Chai and IeChi Suen",
             "Before Sunday service - Pick up flowers (Bridal bouquet x1, Groom's buttonhole x1, Chatsworth Flowers, Jacqueline: 0400784248, 96 Beaufort Street, Perth)",
             "2:00pm - Sanctuary setup & decoration with IeChi Suen"
+        ],
+        taskDetails: [
+            "Saturday decoration team with Leena Chai (IC), IeChi Suen, and bridal party. Setup stage background, staircase, flower stand, 4 matrimony pillars.",
+            "Vendor: Chatsworth Flowers, Contact: Jacqueline 0400784248, Address: 96 Beaufort Street, Perth. Drop flowers at photocopy room after pickup.",
+            "Sunday decoration coordination with IeChi Suen. Stage table decoration and touch up Saturday decoration work."
         ]
     },
 
@@ -371,6 +427,13 @@ const weddingHelpers = {
             "Half Bánh Mì for children in Sunday School",
             "Keep some food for the bridal party and drivers",
             "Coordinate with Helen Cheong and Lily Gao"
+        ],
+        taskDetails: [
+            "Lead food distribution coordinator. Manage distribution of 200 Bánh Mì (100 Pork, 100 Chicken) picked up by Andrew Chan.",
+            "Distribution rule: One full Bánh Mì per person. No food for children under 3 years old to avoid waste.",
+            "Special rule for children: Half Bánh Mì for children in Sunday School only (children 3+ who attend Sunday School).",
+            "Reserve portions: Keep some food specifically for bridal party members and transport drivers before general distribution.",
+            "Team coordination: Work with Helen Cheong and Lily Gao for efficient distribution flow and crowd management."
         ]
     },
     "Helen Cheong": {
@@ -468,6 +531,19 @@ const weddingHelpers = {
             "9:30pm - Announce first dance",
             "9:40pm - Announce dance floor open",
             "Time keeping throughout reception"
+        ],
+        taskDetails: [
+            "Welcome all guests to dinner reception. Provide safety information: emergency exits, nearest toilets, and venue guidelines.",
+            "Introduce bridesmaids and groomsmen individually, then announce the entrance of bride and groom. Coordinate with Lyndon for music.",
+            "Announce grace prayer to be led by Benny Suwarno. Ensure all guests are ready before prayer begins.",
+            "Announce bridesmaids speech(es). Coordinate timing with bridesmaids and ensure microphone is ready.",
+            "Announce main course service will begin. Also announce that bride and groom will take photos with guests at designated tables.",
+            "Announce groomsmen speech(es) and toast. Ensure drinks are ready for toast and coordinate with venue staff.",
+            "Announce cake cutting ceremony, presentation of marriage certificate by pastors, and gift presentation from pastors and parents.",
+            "Announce dessert service and wedding game coordination by Roger Chuang. Ensure smooth transition between activities.",
+            "Announce first dance for bride and groom. Coordinate with Lyndon for music and lighting if needed.",
+            "Announce dance floor is open for all guests. Encourage participation and maintain energy throughout evening.",
+            "Primary time keeper for entire reception. Coordinate with Jenny Sophian and ensure all activities stay on schedule."
         ]
     },
 
@@ -495,6 +571,11 @@ const weddingHelpers = {
             "5:00pm - Lead cleanup of foyer, toilet, and sanctuary",
             "Coordinate with JAG, JETS and YA4 groups",
             "6:00pm - Car park ushering at dinner reception (next to lift with Peter)"
+        ],
+        taskDetails: [
+            "Lead cleanup coordinator for Cana House after ceremony ends. Focus on foyer, toilet areas, and sanctuary spaces.",
+            "Team coordination: Work with JAG, JETS, and YA4 groups for efficient cleanup. Assign areas and supervise work.",
+            "After Cana cleanup, proceed to dinner reception for car park ushering duties. Position next to lift with Peter Kartosudiro."
         ]
     },
     "Renaldy Chian": {
@@ -530,6 +611,10 @@ const weddingHelpers = {
         tasks: [
             "3:00pm - Ring bearer entrance during ceremony",
             "Carry rings during ceremony entrance"
+        ],
+        taskDetails: [
+            "Ring bearer entrance follows the bridesmaids and precedes the flower girl. Walk slowly down the aisle.",
+            "Carry the rings on a pillow or ring bearer box. Follow instructions from Like Johanes and ceremony coordinators."
         ]
     },
     "Grace Win": {
@@ -564,6 +649,11 @@ const weddingHelpers = {
             "2:00pm - Photographer briefing with Andrew Chan",
             "4:00pm - Photo taking (families, pastors, friends, colleagues - Ping side first, then all Aflamers)",
             "5:00pm - Take outdoor wedding photos with bridal party"
+        ],
+        taskDetails: [
+            "Vendor: Allseasons Photo, Rio Yapari 0434150762. Coordinate with Andrew Chan for photographer and videographer briefing (3 people overall).",
+            "MC Reynard Chan announces photo taking order: Family, Pastors, Friends and Colleagues (Ping side first), then All Aflamers.",
+            "Take outdoor wedding photos with bridal party after ceremony. Coordinate timing with Like Johanes and transport team."
         ]
     },
 
@@ -655,10 +745,13 @@ function searchHelper() {
 function displayResults(name, helper) {
     const searchResults = document.getElementById('searchResults');
     
+    // Check if this helper has any task details
+    const hasAnyDetails = helper.taskDetails && helper.taskDetails.some(detail => detail && detail.trim() !== '');
+    
     const tasksHTML = helper.tasks.map((task, index) => {
         const taskDetail = helper.taskDetails && helper.taskDetails[index] ? helper.taskDetails[index] : '';
         return `
-            <li class="task-item" onclick="toggleTaskDetail(this)">
+            <li class="task-item" data-task-index="${index}">
                 <div class="task-main">${task}</div>
                 ${taskDetail ? `<div class="task-detail hidden">${taskDetail}</div>` : ''}
                 ${taskDetail ? '<div class="task-expand-icon">▼</div>' : ''}
@@ -670,7 +763,7 @@ function displayResults(name, helper) {
         <h3>Hello ${name}!</h3>
         <div class="role-badge">${helper.role}</div>
         <h4 style="color: #333; margin: 20px 0 15px 0; font-weight: 400;">Your Wedding Day Tasks:</h4>
-        <p style="color: #666; font-size: 14px; text-align: center; margin-bottom: 15px; font-style: italic;">Click on tasks to see detailed information</p>
+        ${hasAnyDetails ? '<p style="color: #666; font-size: 14px; text-align: center; margin-bottom: 15px; font-style: italic;">Click on tasks to see detailed information</p>' : ''}
         <ul class="tasks-list">
             ${tasksHTML}
         </ul>
@@ -681,19 +774,56 @@ function displayResults(name, helper) {
     
     searchResults.classList.remove('hidden');
     
+    // Add click event listeners to task items that have details
+    const taskItems = searchResults.querySelectorAll('.task-item');
+    taskItems.forEach(taskItem => {
+        const hasDetail = taskItem.querySelector('.task-detail');
+        if (hasDetail) {
+            taskItem.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                console.log('Task item clicked:', this); // Debug log
+                toggleTaskDetail(this);
+            });
+            // Add a class to indicate this task is clickable
+            taskItem.classList.add('clickable');
+        }
+    });
+    
     // Smooth scroll to results
     searchResults.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
 // Toggle task detail expansion
 function toggleTaskDetail(taskElement) {
+    console.log('toggleTaskDetail called'); // Debug log
+    
     const detail = taskElement.querySelector('.task-detail');
     const icon = taskElement.querySelector('.task-expand-icon');
     
+    console.log('Detail element:', detail); // Debug log
+    console.log('Icon element:', icon); // Debug log
+    
     if (detail) {
-        detail.classList.toggle('hidden');
-        icon.textContent = detail.classList.contains('hidden') ? '▼' : '▲';
+        const isHidden = detail.classList.contains('hidden');
+        
+        if (isHidden) {
+            detail.classList.remove('hidden');
+            detail.style.display = 'block';
+        } else {
+            detail.classList.add('hidden');
+            detail.style.display = 'none';
+        }
+        
+        if (icon) {
+            icon.textContent = isHidden ? '▲' : '▼';
+        }
+        
         taskElement.classList.toggle('expanded');
+        
+        console.log('Task clicked, detail now visible:', !detail.classList.contains('hidden'));
+    } else {
+        console.log('No task detail found for this task');
     }
 }
 
