@@ -121,6 +121,12 @@ const weddingHelpers = {
             "Overall event overseeing and coordination during ceremony",
             "Coordinate bride and bridesmaid entry",
             "Ensure ceremony runs smoothly"
+        ],
+        taskDetails: [
+            "Sabrina will contact Like once the cars arrive. Like will info Sabrina when to come in to Cana House.",
+            "Primary coordinator for all ceremony activities. Work with Marini Angouw to ensure smooth operations.",
+            "Coordinate the processional order: Bridesmaids → Ring Bearer → Flower Girl → Bride entrance.",
+            "Monitor ceremony timeline and coordinate with MC Reynard Chan and other coordinators."
         ]
     },
     "Marini Angouw": {
@@ -407,6 +413,11 @@ const weddingHelpers = {
             "Before Sunday service - Pick up lunch for Aflamers (Pork Bánh Mì x100, Chicken Bánh Mì x100, Ben Thanh Lunch Bar 0434589117, 4/73 Honeywell Blvd, Mirrabooka)",
             "2:00pm - Photographer and videographer briefing (Allseasons Photo, Rio Yapari 0434150762)",
             "Marriage certificate witness - sign marriage certificate"
+        ],
+        taskDetails: [
+            "Contact: Ben Thanh Lunch Bar 0434589117. Address: 4/73 Honeywell Blvd, Mirrabooka. Drop off at MC side for distribution after Sunday service.",
+            "Vendor: Allseasons Photo, Rio Yapari 0434150762. Coordinate 3 people overall for photography team briefing.",
+            "Witness signing during ceremony with Vianny Chan. Both Andrew & Vianny Chan are the official marriage certificate witnesses."
         ]
     },
     "Vianny Chan": {
@@ -426,6 +437,14 @@ const weddingHelpers = {
             "7:00pm - Coordinate with vendors and bridal party entry",
             "7:10pm - Bridal party in position",
             "8:00pm - Direct bride and groom table photos"
+        ],
+        taskDetails: [
+            "Set up at dinner reception venue. Check guest names & guest gifts according to the seating plan map.",
+            "Main coordinator for reception opening. Ensure all guests can enter smoothly.",
+            "Primary time keeper and coordinator. Work with Maria Gunawan for assistance.",
+            "Coordinate with Beaumonde on the Point staff and bridal party for smooth entrance.",
+            "Ensure all bridal party members are in correct positions for entrance announcements.",
+            "Work with Maria Gunawan to direct bride and groom to assigned tables for photo taking with guests."
         ]
     },
     "Maria Gunawan": {
@@ -636,12 +655,22 @@ function searchHelper() {
 function displayResults(name, helper) {
     const searchResults = document.getElementById('searchResults');
     
-    const tasksHTML = helper.tasks.map(task => `<li>${task}</li>`).join('');
+    const tasksHTML = helper.tasks.map((task, index) => {
+        const taskDetail = helper.taskDetails && helper.taskDetails[index] ? helper.taskDetails[index] : '';
+        return `
+            <li class="task-item" onclick="toggleTaskDetail(this)">
+                <div class="task-main">${task}</div>
+                ${taskDetail ? `<div class="task-detail hidden">${taskDetail}</div>` : ''}
+                ${taskDetail ? '<div class="task-expand-icon">▼</div>' : ''}
+            </li>
+        `;
+    }).join('');
     
     searchResults.innerHTML = `
         <h3>Hello ${name}!</h3>
         <div class="role-badge">${helper.role}</div>
         <h4 style="color: #333; margin: 20px 0 15px 0; font-weight: 400;">Your Wedding Day Tasks:</h4>
+        <p style="color: #666; font-size: 14px; text-align: center; margin-bottom: 15px; font-style: italic;">Click on tasks to see detailed information</p>
         <ul class="tasks-list">
             ${tasksHTML}
         </ul>
@@ -654,6 +683,18 @@ function displayResults(name, helper) {
     
     // Smooth scroll to results
     searchResults.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// Toggle task detail expansion
+function toggleTaskDetail(taskElement) {
+    const detail = taskElement.querySelector('.task-detail');
+    const icon = taskElement.querySelector('.task-expand-icon');
+    
+    if (detail) {
+        detail.classList.toggle('hidden');
+        icon.textContent = detail.classList.contains('hidden') ? '▼' : '▲';
+        taskElement.classList.toggle('expanded');
+    }
 }
 
 // Display No Results

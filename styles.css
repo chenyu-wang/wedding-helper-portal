@@ -157,6 +157,51 @@ main {
     width: 15px;
 }
 
+.task-item {
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.task-item:hover {
+    background: #f0f0f0;
+    border-left-color: #555;
+}
+
+.task-item.expanded {
+    background: #e8f4f8;
+    border-left-color: #0066cc;
+}
+
+.task-main {
+    padding-right: 25px;
+}
+
+.task-detail {
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+    transition: all 0.3s ease;
+}
+
+.task-expand-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 12px;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+.task-item.expanded .task-expand-icon {
+    transform: rotate(180deg);
+}
+
 .no-results {
     text-align: center;
     background: #fff8dc;
