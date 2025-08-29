@@ -1,5 +1,5 @@
 // Chenyu & Ping Wedding Helper Portal JavaScript
-// Updated from Run Sheet V2.0-3
+// Updated from Run Sheet V2.0-4
 
 // Bridal Party Mapping
 const bridalParty = {
@@ -11,13 +11,13 @@ const bridalParty = {
     groomsmen: ["Ernest Wijaya", "Lester Aguda"]
 };
 
-// Wedding Helper Data based on the official run sheet
+// Wedding Helper Data based on the official run sheet V2.0-4
 const weddingHelpers = {
     // Bridal Party
     "Ping Li": {
         role: "Bride",
         tasks: [
-            "9:00am - Make up starts at Westin Perth (Makeup Artist: Yuko 0430239540)",
+            "9:00am - Bridesmaids arrive at Westin Perth for makeup",
             "6:15pm - Bride makeup touchup at dinner venue bridal salon",
             "7:10pm - Bridal party entrance at dinner reception",
             "8:45pm - Cut wedding cake with groom",
@@ -25,6 +25,16 @@ const weddingHelpers = {
             "8:45pm - Give bride and groom speech",
             "9:30pm - First dance with groom",
             "10:00pm - Thank guests before end of reception"
+        ],
+        taskDetails: [
+            "Westin Perth with bridesmaids. Makeup Artist: Yuko 0430239540. Coordinate timing with Sabrina, Monica, and Angela.",
+            "Bridal salon at Beaumonde on the Point dinner venue. Makeup artist Yuko 0430239540 for touchup before reception.",
+            "Enter with bridal party. Follow Jenny Sophian's coordination for reception entrance timing.",
+            "Cake cutting ceremony with Chenyu. Coordinate with Roger and bridal party for distribution to tables.",
+            "Receive gifts and marriage certificate presentation from pastors. Also receive gifts from both sets of parents.",
+            "Deliver bride and groom speech. Coordinate timing with MC Daniel Gunawan during reception.",
+            "First dance with Chenyu. Lyndon Win will coordinate music timing.",
+            "Thank all guests before reception ends. Final opportunity to express gratitude to everyone who attended."
         ]
     },
     "Chenyu Wang": {
@@ -37,6 +47,15 @@ const weddingHelpers = {
             "8:45pm - Give bride and groom speech",
             "9:30pm - First dance with bride",
             "10:00pm - Thank guests before end of reception"
+        ],
+        taskDetails: [
+            "Stand with Roger, Ernest, and Lester at sanctuary. Coordinate timing with ceremony schedule and Like Johanes.",
+            "Enter with bridal party. Follow Jenny Sophian's coordination for reception entrance timing.",
+            "Cake cutting ceremony with Ping. Work with bridal party to distribute pieces to all guest tables.",
+            "Receive gifts and marriage certificate presentation from pastors. Also receive gifts from both sets of parents.",
+            "Deliver bride and groom speech with Ping. Coordinate timing with MC Daniel Gunawan during reception.",
+            "First dance with Ping. Lyndon Win will coordinate music and Hendra Wijaya will assist with sound.",
+            "Thank all guests before reception ends. Final opportunity to express gratitude to everyone who attended."
         ]
     },
     "Sabrina Zhou": {
@@ -45,6 +64,7 @@ const weddingHelpers = {
             "9:00am - Bridesmaids arrive at Westin Perth for makeup",
             "2:30pm - Travel from Westin to Cana with Tze (bride & maid of honour)",
             "2:45pm - Contact Like Johanes when bridal cars arrive at Cana",
+            "2:55pm - Bride and bridesmaids in position for ceremony",
             "7:10pm - Bridal party entrance at dinner reception",
             "7:45pm - Bridesmaids speech at dinner reception",
             "9:30pm - Cut and distribute cakes to tables",
@@ -54,6 +74,7 @@ const weddingHelpers = {
             "Makeup Artist: Yuko 0430239540. Coordinate with Monica Yaw and Angela Fong for arrival and makeup schedule.",
             "Tze drives Ping & Sabrina from Westin to Cana House. Coordinate timing with Senjaya who drives mums and other bridesmaids.",
             "Contact Like Johanes when bridal cars arrive at Cana House. Like will inform when to come into Cana House for ceremony.",
+            "Work with Like Johanes and Reynard Chan to position bridesmaids and bride for ceremony entrance. Angela, Monica, Sabrina, then Ping with her father.",
             "Enter with other bridal party members. Follow ceremony coordinator instructions for positioning and timing.",
             "Deliver bridesmaids speech during dinner reception. Coordinate timing with MC Daniel Gunawan.",
             "Work with other bridal party to cut wedding cake and distribute pieces to all guest tables. Check with Nadine at venue.",
@@ -73,12 +94,12 @@ const weddingHelpers = {
             "10:10pm - Post-dinner tidy up duties"
         ],
         taskDetails: [
-            "Vendor: TMI Studio, Joyce Jiao 0433 555 567. Address: 2/14 Shields Cr, Booragoon. Pick up 4 matrimony pillars and drop at Cana House.",
+            "Vendor: TMI Studio, Joyce Jiao 0433 555 567. Address: 2/14 Shields Cr, Booragoon. Pick up 4 matrimony pillars on Saturday morning and drop at Cana House.",
             "Stand with Chenyu, Ernest, and Lester at sanctuary. Coordinate timing with ceremony schedule and Like Johanes.",
-            "Unity-candle attendant role during ceremony. Assist bride and groom with candle lighting ritual.",
+            "Unity-candle attendant role during ceremony. Assist bride and groom with candle lighting ritual as part of the holy matrimony ceremony.",
             "Enter with groomsmen and other bridal party. Follow Jenny Sophian's coordination for reception entrance.",
             "Deliver groomsmen speech and lead toast. Coordinate with MC Daniel Gunawan for timing during dinner.",
-            "Lead wedding game coordination for bride and groom entertainment. Plan and execute games during dessert service.",
+            "Lead wedding game coordination for bride and groom entertainment. Plan and execute games during dessert service at 9:15pm.",
             "Work with bridal party to cut and distribute wedding cake pieces to all guest tables.",
             "Help collect and organize extra items for cleanup. Assist with general post-dinner tidy up duties."
         ]
@@ -89,10 +110,21 @@ const weddingHelpers = {
             "Saturday - Pick up easel (Anne Ibanez 0416596169, Harrisdale) - 3 easels",
             "9:00am - Bridesmaids arrive at Westin Perth for makeup",
             "2:30pm - Travel from Westin to Cana with Senjaya (mums, Monica and Angela)",
+            "2:55pm - Bridesmaids in position for ceremony entrance",
             "7:10pm - Bridal party entrance at dinner reception",
             "7:45pm - Bridesmaids speech at dinner reception",
             "9:30pm - Cut and distribute cakes to tables",
             "10:10pm - Post-dinner tidy up duties"
+        ],
+        taskDetails: [
+            "Contact: Anne Ibanez 0416596169, Address: Harrisdale. Pick up 3 easels on Saturday and drop off at Cana House.",
+            "Westin Perth with other bridesmaids. Makeup Artist: Yuko 0430239540. Coordinate with Sabrina and Angela.",
+            "Senjaya drives mums (Lijiang Yu & Qiuzhi Chen), Monica and Angela from Westin to Cana House. Coordinate with Tze who drives Ping & Sabrina.",
+            "Work with Like Johanes and Reynard Chan for ceremony entrance positioning. Order: Angela, Monica, Sabrina, then Ping with father.",
+            "Enter with bridal party. Follow Jenny Sophian's coordination for reception entrance timing.",
+            "Deliver bridesmaids speech with other bridesmaids. Coordinate timing with MC Daniel Gunawan during reception.",
+            "Work with bridal party to cut wedding cake and distribute pieces to all guest tables.",
+            "Assist with post-dinner cleanup and organization of wedding items."
         ]
     },
     "Angela Fong": {
@@ -100,16 +132,26 @@ const weddingHelpers = {
         tasks: [
             "9:00am - Bridesmaids arrive at Westin Perth for makeup",
             "2:30pm - Travel from Westin to Cana with Senjaya (mums, Monica and Angela)",
+            "2:55pm - Bridesmaids in position for ceremony entrance",
             "7:10pm - Bridal party entrance at dinner reception",
             "7:45pm - Bridesmaids speech at dinner reception",
             "9:30pm - Cut and distribute cakes to tables",
             "10:10pm - Post-dinner tidy up duties"
+        ],
+        taskDetails: [
+            "Westin Perth with other bridesmaids. Makeup Artist: Yuko 0430239540. Coordinate with Sabrina and Monica.",
+            "Senjaya drives mums (Lijiang Yu & Qiuzhi Chen), Monica and Angela from Westin to Cana House. Coordinate with Tze who drives Ping & Sabrina.",
+            "Work with Like Johanes and Reynard Chan for ceremony entrance positioning. Angela enters first, followed by Monica, Sabrina, then Ping.",
+            "Enter with bridal party. Follow Jenny Sophian's coordination for reception entrance timing.",
+            "Deliver bridesmaids speech with other bridesmaids. Coordinate timing with MC Daniel Gunawan during reception.",
+            "Work with bridal party to cut wedding cake and distribute pieces to all guest tables.",
+            "Assist with post-dinner cleanup and organization of wedding items."
         ]
     },
     "Ernest Wijaya": {
         role: "Groomsman",
         tasks: [
-            "Friday 5:30-6:30pm - Pick up mannequin (Josephine 0451993108, Como)",
+            "Friday 5:30-6:30pm - Pick up mannequin (Josephine 0451993108, Como) - Drop off at Ping's House",
             "Saturday - Drop off holy matrimony gifts from Chenyu's place to Cana House (IC with Lester)",
             "Saturday - Drop off reception gifts from Chenyu's place to Beaumonde on the Point (IC with Lester, Nadine Wellinger 0892188088)",
             "2:30pm - Groom and groomsmen in position at sanctuary",
@@ -117,6 +159,16 @@ const weddingHelpers = {
             "8:30pm - Groomsmen speech and toast at dinner reception",
             "9:30pm - Cut and distribute cakes to tables",
             "10:10pm - Post-dinner tidy up duties"
+        ],
+        taskDetails: [
+            "Contact: Josephine 0451993108, Address: Como. Pick up mannequin Friday 5:30-6:30pm and drop off at Ping's house.",
+            "Coordinate with Lester Aguda to transport holy matrimony gifts from Chenyu's place to Cana House on Saturday.",
+            "Coordinate with Lester Aguda to transport reception gifts from Chenyu's place to Beaumonde on the Point. Contact: Nadine Wellinger 0892188088. Drop to vendor office on second floor.",
+            "Stand with Chenyu, Roger, and Lester at sanctuary. Coordinate timing with ceremony schedule and Like Johanes.",
+            "Enter with groomsmen and other bridal party. Follow Jenny Sophian's coordination for reception entrance.",
+            "Deliver groomsmen speech and participate in toast. Coordinate with MC Daniel Gunawan for timing during dinner.",
+            "Work with bridal party to cut wedding cake and distribute pieces to all guest tables.",
+            "Assist with post-dinner cleanup and organization of wedding items."
         ]
     },
     "Lester Aguda": {
@@ -129,6 +181,15 @@ const weddingHelpers = {
             "8:30pm - Groomsmen speech and toast at dinner reception",
             "9:30pm - Cut and distribute cakes to tables",
             "10:10pm - Post-dinner tidy up duties"
+        ],
+        taskDetails: [
+            "Work with Ernest Wijaya to transport holy matrimony gifts from Chenyu's place to Cana House on Saturday.",
+            "Work with Ernest Wijaya to transport reception gifts from Chenyu's place to Beaumonde on the Point. Contact: Nadine Wellinger 0892188088. Drop to vendor office on second floor.",
+            "Stand with Chenyu, Roger, and Ernest at sanctuary. Coordinate timing with ceremony schedule and Like Johanes.",
+            "Enter with groomsmen and other bridal party. Follow Jenny Sophian's coordination for reception entrance.",
+            "Deliver groomsmen speech and participate in toast. Coordinate with MC Daniel Gunawan for timing during dinner.",
+            "Work with bridal party to cut wedding cake and distribute pieces to all guest tables.",
+            "Assist with post-dinner cleanup and organization of wedding items."
         ]
     },
 
@@ -642,7 +703,57 @@ const weddingHelpers = {
         ]
     },
 
-    // Vendors (for completeness)
+    // New Vendors and Additional Staff
+    "Joyce Jiao": {
+        role: "Event Decorator (TMI Studio)",
+        tasks: [
+            "Prior to 5:00pm - Reception decoration at Beaumonde on the Point",
+            "Setup matrimony pillars x4 and Tiffany chairs x14",
+            "Setup LOVE LED letters x1 and centerpieces x19",
+            "Setup bridal table with 1x1.5m artificial flower arrangement and 2x1m LED candles"
+        ],
+        taskDetails: [
+            "Vendor: TMI Studio, Contact: 0433555567, Address: 2/14 Shields Cr, Booragoon. Setup reception decorations at Beaumonde.",
+            "Event items include both ceremony matrimony pillars and reception Tiffany chairs for the dinner venue.",
+            "Reception specific items: LOVE LED letters display and 19 table centerpieces for guest tables.",
+            "Special bridal table setup with large artificial flower arrangement and LED candles for ambiance."
+        ]
+    },
+    "Sotoudeh Keivani": {
+        role: "Wedding Cake Vendor",
+        tasks: [
+            "Prior to 5:00pm - Setup 3-layer wedding cake at Beaumonde on the Point"
+        ],
+        taskDetails: [
+            "Vendor: Sotoudehcake, Contact: 0439538378. Deliver and setup 3-layer wedding cake at reception venue."
+        ]
+    },
+    "Chris Pelajic": {
+        role: "Dance Floor Setup (Lumin8 Events)",
+        tasks: [
+            "Prior to 5:00pm - Setup white gloss dance floor (5m x 5m) at Beaumonde on the Point"
+        ],
+        taskDetails: [
+            "Vendor: Lumin8 Events, Contact: 0404881525. Setup white gloss dance floor 5m x 5m for reception dancing."
+        ]
+    },
+    "Nadine Wellinger": {
+        role: "Venue Coordinator (Beaumonde on the Point)",
+        tasks: [
+            "Prior to 5:00pm - Setup reception tables including place cards and gifts",
+            "6:15pm - Serve pre-drinks and canapes",
+            "7:20pm - Serve entree (wait until prayer finishes)",
+            "8:00pm - Serve main course",
+            "9:15pm - Serve dessert"
+        ],
+        taskDetails: [
+            "Venue: Beaumonde on the Point, Contact: 0892188088. Coordinate all reception table setup including guest place cards and gifts.",
+            "Coordinate pre-drinks and canapes service during guest arrival and pre-reception time.",
+            "Ensure entree service waits until grace prayer by Benny Suwarno is completed.",
+            "Coordinate main course service timing with bride and groom table photos directed by Jenny Sophian and Maria Gunawan.",
+            "Coordinate dessert service with wedding game timing led by Roger Chuang."
+        ]
+    },
     "Rio Yapari": {
         role: "Photographer",
         tasks: [
@@ -663,11 +774,50 @@ const weddingHelpers = {
         tasks: [
             "12:00pm - Drop off Tiffany chairs to Cana House foyer",
             "Store chairs in room next to the lift"
+        ],
+        taskDetails: [
+            "Vendor: TMI Studio coordination. Drop off Tiffany chairs to Cana House foyer for ceremony setup.",
+            "Store chairs in designated room next to the lift for easy access during setup."
+        ]
+    },
+    
+    // Additional Cleanup and Setup Team
+    "JAG Team": {
+        role: "Cleanup Team",
+        tasks: [
+            "5:00pm - Assist Edward Guan with Cana House cleanup",
+            "Focus on foyer, toilet, and sanctuary areas"
+        ],
+        taskDetails: [
+            "Youth group team working under Edward Guan's coordination for Cana House cleanup after ceremony.",
+            "Concentrate cleanup efforts on high-traffic areas: foyer, toilet facilities, and sanctuary space."
+        ]
+    },
+    "JETS Team": {
+        role: "Cleanup Team",
+        tasks: [
+            "5:00pm - Assist Edward Guan with Cana House cleanup",
+            "Focus on foyer, toilet, and sanctuary areas"
+        ],
+        taskDetails: [
+            "Youth group team working under Edward Guan's coordination for Cana House cleanup after ceremony.",
+            "Concentrate cleanup efforts on high-traffic areas: foyer, toilet facilities, and sanctuary space."
+        ]
+    },
+    "YA4 Team": {
+        role: "Cleanup Team",
+        tasks: [
+            "5:00pm - Assist Edward Guan with Cana House cleanup",
+            "Focus on foyer, toilet, and sanctuary areas"
+        ],
+        taskDetails: [
+            "Youth group team working under Edward Guan's coordination for Cana House cleanup after ceremony.",
+            "Concentrate cleanup efforts on high-traffic areas: foyer, toilet facilities, and sanctuary space."
         ]
     }
 };
 
-// Google Docs URLs (updated)
+// Google Docs URLs (updated for V2.0-4)
 const documentUrls = {
     runsheet: "https://docs.google.com/document/d/1bjHkp6Isy0Y5vtlA9ffmskrmnI79rLGREyzwOXy4Kh0/edit?usp=sharing",
     roles: "https://docs.google.com/document/d/1hBAxPbhZWKcIRaPYr3uxY4y1DMpFcDR4I1d7UgwlMXs/edit?usp=sharing"
