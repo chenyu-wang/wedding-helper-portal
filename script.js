@@ -1,5 +1,5 @@
 // Chenyu & Ping Wedding Helper Portal JavaScript
-// Updated from Run Sheet V2.0-4
+// Updated from Run Sheet V2.0-5
 
 // Bridal Party Mapping
 const bridalParty = {
@@ -11,7 +11,7 @@ const bridalParty = {
     groomsmen: ["Ernest Wijaya", "Lester Aguda"]
 };
 
-// Wedding Helper Data based on the official run sheet V2.0-4
+// Wedding Helper Data based on the official run sheet V2.0-5
 const weddingHelpers = {
     // Bridal Party
     "Ping Li": {
@@ -22,7 +22,7 @@ const weddingHelpers = {
             "7:10pm - Bridal party entrance at dinner reception",
             "8:45pm - Cut wedding cake with groom",
             "8:45pm - Receive gifts from pastors and parents",
-            "8:45pm - Give bride and groom speech",
+            "9:15pm - Bride and groom speech",
             "9:30pm - First dance with groom",
             "10:00pm - Thank guests before end of reception"
         ],
@@ -31,7 +31,7 @@ const weddingHelpers = {
             "Bridal salon at Beaumonde on the Point dinner venue. Makeup artist Yuko 0430239540 for touchup before reception.",
             "Enter with bridal party. Follow Jenny Sophian's coordination for reception entrance timing.",
             "Cake cutting ceremony with Chenyu. Coordinate with Roger and bridal party for distribution to tables.",
-            "Receive gifts and marriage certificate presentation from pastors. Also receive gifts from both sets of parents.",
+            "Receive gifts and marriage certificate presentation from pastors. Also receive gifts from both sets of parents. Angela Fong will pass the gifts to bride & groom.",
             "Deliver bride and groom speech. Coordinate timing with MC Daniel Gunawan during reception.",
             "First dance with Chenyu. Lyndon Win will coordinate music timing.",
             "Thank all guests before reception ends. Final opportunity to express gratitude to everyone who attended."
@@ -44,7 +44,7 @@ const weddingHelpers = {
             "7:10pm - Bridal party entrance at dinner reception",
             "8:45pm - Cut wedding cake with bride",
             "8:45pm - Receive gifts from pastors and parents",
-            "8:45pm - Give bride and groom speech",
+            "9:15pm - Give bride and groom speech",
             "9:30pm - First dance with bride",
             "10:00pm - Thank guests before end of reception"
         ],
@@ -52,7 +52,7 @@ const weddingHelpers = {
             "Stand with Roger, Ernest, and Lester at sanctuary. Coordinate timing with ceremony schedule and Like Johanes.",
             "Enter with bridal party. Follow Jenny Sophian's coordination for reception entrance timing.",
             "Cake cutting ceremony with Ping. Work with bridal party to distribute pieces to all guest tables.",
-            "Receive gifts and marriage certificate presentation from pastors. Also receive gifts from both sets of parents.",
+            "Receive gifts and marriage certificate presentation from pastors. Also receive gifts from both sets of parents. Angela Fong will pass the gifts.",
             "Deliver bride and groom speech with Ping. Coordinate timing with MC Daniel Gunawan during reception.",
             "First dance with Ping. Lyndon Win will coordinate music and Hendra Wijaya will assist with sound.",
             "Thank all guests before reception ends. Final opportunity to express gratitude to everyone who attended."
@@ -63,7 +63,7 @@ const weddingHelpers = {
         tasks: [
             "9:00am - Bridesmaids arrive at Westin Perth for makeup",
             "2:30pm - Travel from Westin to Cana with Tze (bride & maid of honour)",
-            "2:45pm - Contact Like Johanes when bridal cars arrive at Cana",
+            "2:55pm - Contact Like Johanes when bridal cars arrive at Cana",
             "2:55pm - Bride and bridesmaids in position for ceremony",
             "7:10pm - Bridal party entrance at dinner reception",
             "7:45pm - Bridesmaids speech at dinner reception",
@@ -107,7 +107,7 @@ const weddingHelpers = {
     "Monica Yaw": {
         role: "Bridesmaid",
         tasks: [
-            "Saturday - Pick up easel (Anne Ibanez 0416596169, Harrisdale) - 3 easels",
+            "Saturday - Pick up 3 easels (Anne Ibanez 0416596169, Harrisdale) - 1 to Cana House, 2 to Beaumonde",
             "9:00am - Bridesmaids arrive at Westin Perth for makeup",
             "2:30pm - Travel from Westin to Cana with Senjaya (mums, Monica and Angela)",
             "2:55pm - Bridesmaids in position for ceremony entrance",
@@ -117,7 +117,7 @@ const weddingHelpers = {
             "10:10pm - Post-dinner tidy up duties"
         ],
         taskDetails: [
-            "Contact: Anne Ibanez 0416596169, Address: Harrisdale. Pick up 3 easels on Saturday and drop off at Cana House.",
+            "Contact: Anne Ibanez 0416596169, Address: Harrisdale. Pick up 3 easels on Saturday: 1 to be dropped off at Cana House, 2 to be dropped off at Beaumonde on the Point.",
             "Westin Perth with other bridesmaids. Makeup Artist: Yuko 0430239540. Coordinate with Sabrina and Angela.",
             "Senjaya drives mums (Lijiang Yu & Qiuzhi Chen), Monica and Angela from Westin to Cana House. Coordinate with Tze who drives Ping & Sabrina.",
             "Work with Like Johanes and Reynard Chan for ceremony entrance positioning. Order: Angela, Monica, Sabrina, then Ping with father.",
@@ -133,8 +133,10 @@ const weddingHelpers = {
             "9:00am - Bridesmaids arrive at Westin Perth for makeup",
             "2:30pm - Travel from Westin to Cana with Senjaya (mums, Monica and Angela)",
             "2:55pm - Bridesmaids in position for ceremony entrance",
+            "5:00pm - Collect gifts for pastors & parents from BOTP, pass to bride & groom after bridal party entrance",
             "7:10pm - Bridal party entrance at dinner reception",
             "7:45pm - Bridesmaids speech at dinner reception",
+            "8:45pm - Pass gifts to bride & groom during gift presentation",
             "9:30pm - Cut and distribute cakes to tables",
             "10:10pm - Post-dinner tidy up duties"
         ],
@@ -142,8 +144,10 @@ const weddingHelpers = {
             "Westin Perth with other bridesmaids. Makeup Artist: Yuko 0430239540. Coordinate with Sabrina and Monica.",
             "Senjaya drives mums (Lijiang Yu & Qiuzhi Chen), Monica and Angela from Westin to Cana House. Coordinate with Tze who drives Ping & Sabrina.",
             "Work with Like Johanes and Reynard Chan for ceremony entrance positioning. Angela enters first, followed by Monica, Sabrina, then Ping.",
+            "Collect welcome sign from BOTP venue. Collect gifts for pastors & parents from BOTP, pass on to Angela F after bridal party entrance.",
             "Enter with bridal party. Follow Jenny Sophian's coordination for reception entrance timing.",
             "Deliver bridesmaids speech with other bridesmaids. Coordinate timing with MC Daniel Gunawan during reception.",
+            "Pass the gifts to bride & groom during the MC announcement of gift presentation from pastors and parents.",
             "Work with bridal party to cut wedding cake and distribute pieces to all guest tables.",
             "Assist with post-dinner cleanup and organization of wedding items."
         ]
@@ -817,7 +821,7 @@ const weddingHelpers = {
     }
 };
 
-// Google Docs URLs (updated for V2.0-4)
+// Google Docs URLs (updated for V2.0-5)
 const documentUrls = {
     runsheet: "https://docs.google.com/document/d/1bjHkp6Isy0Y5vtlA9ffmskrmnI79rLGREyzwOXy4Kh0/edit?usp=sharing",
     roles: "https://docs.google.com/document/d/1hBAxPbhZWKcIRaPYr3uxY4y1DMpFcDR4I1d7UgwlMXs/edit?usp=sharing"
