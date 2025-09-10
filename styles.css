@@ -178,7 +178,33 @@ main {
     font-size: 16px;
     text-align: center;
     margin: 15px 0;
+}
+
+.appreciation-message {
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 20px 0 10px 0;
+    text-align: center;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.5;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.appreciation-message em {
+    display: block;
+    margin-top: 8px;
     font-style: italic;
+    font-weight: 500;
+    color: #333;
+}
+
+.helper-summary-text {
+    font-style: italic;
+    color: #666;
+    margin-top: 10px;
 }
 
 .help-note {
@@ -214,35 +240,37 @@ main {
 }
 
 .date-header {
-    background: #f8f9fa;
-    margin: 20px 0 10px 0;
-    padding: 12px 15px;
-    border-radius: 4px;
-    border-left: 4px solid #3b82f6;
+    background: #f3f4f6;
+    margin: 25px 0 15px 0;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border: 0 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .date-header h4 {
     margin: 0;
     color: #1f2937;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .date-note {
     margin: 5px 0 0 0;
     color: #6b7280;
-    font-size: 14px;
+    font-size: 13px;
     font-style: italic;
 }
 
 .tasks-list li {
-    background: #f9f9f9;
+    background: white;
     margin: 8px 0;
     padding: 15px;
     border-radius: 4px;
-    border-left: 3px solid #9ca3af;
+    border: 1px solid #e5e7eb;
     font-size: 15px;
     line-height: 1.5;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .task-item {
@@ -256,13 +284,14 @@ main {
 }
 
 .task-item.clickable:hover {
-    background: #f0f0f0;
-    border-left-color: #6b7280;
+    background: #f8f9fa;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .task-item.expanded {
-    background: #f0f9ff;
-    border-left-color: #3b82f6;
+    background: #f8f9fa;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .task-main {

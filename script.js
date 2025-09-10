@@ -220,7 +220,7 @@ const weddingHelpers = {
         role: "Holy Matrimony Coordinator",
         summary: "Supports Like Johanes with ceremony coordination",
         tasks: [
-            "<strong>Coordination Role:</strong> Assist Like Johanes<br><strong>Activities:</strong><br>• Holy matrimony ceremony coordination<br>• Support ceremony logistics<br><strong>Team:</strong> Work under Like Johanes (IC)"
+            "Assist Like Johanes with holy matrimony ceremony coordination and support ceremony logistics"
         ],
         taskDetails: [
             "<strong>Support Role:</strong> Assist Like Johanes (IC)<br><strong>Activities:</strong><br>• All ceremony coordination<br>• Ceremony logistics<br><strong>Location:</strong> Sanctuary and ceremony areas"
@@ -333,7 +333,7 @@ const weddingHelpers = {
         summary: "Manages parking team and reserves spaces for VIP vehicles",
         tasks: [
             "2:00pm - Carpark ushers in position",
-            "<strong>VIP Parking:</strong> Reserve 5 parking bays<br><strong>Purpose:</strong> VIP vehicles (parents, bridal cars, photographer)<br><strong>Coordination:</strong> Direct carpark team"
+            "Reserve 5 parking bays for VIP vehicles (parents, bridal cars, photographer) and direct carpark team"
         ],
         taskDetails: [
             "<strong>Carpark team coordination:</strong><br>• Rudy Rusli<br>• Rudy Suwarno<br>• Kocdal Antipas<br>• Tomas Aguda<br>• Benny Suwarno<br>• Harry Chen",
@@ -564,7 +564,7 @@ const weddingHelpers = {
         role: "Food Pickup & Photography Coordinator",
         summary: "Manages meal pickup and coordinates with photography team",
         tasks: [
-            "<strong>Food Pickup:</strong> Before Sunday Service<br><strong>Items:</strong> Lunch for Aflamers<br><strong>Destination:</strong> MC side drop-off",
+            "Before Sunday Service - Pick up lunch for Aflamers and deliver to MC side drop-off",
             "2:00pm - Photographer and videographer briefing"
         ],
         taskDetails: [
@@ -577,7 +577,7 @@ const weddingHelpers = {
         role: "Food Distributing (IC)",
         summary: "Manages distribution of meals to all wedding attendees",
         tasks: [
-            "<strong>Food Distribution:</strong> After Sunday Service<br><strong>Recipients:</strong> All Aflamers<br><strong>Coordination:</strong> Work with distribution team"
+            "After Sunday Service - Food distribution to all Aflamers"
         ],
         taskDetails: [
             "<strong>Food distribution coordination:</strong> IC (In Charge)<br><strong>Distribution rules:</strong><br>• One Bánh Mì per person<br>• Half Bánh Mì for children in Sunday School (Restaurant pre-cut and packed)<br>• No food for children under 3 years old<br><strong>Team:</strong> Coordinate with Helen Cheong and Lily Gao"
@@ -587,7 +587,7 @@ const weddingHelpers = {
     "Helen Cheong": {
         role: "Food Distribution Assistant",
         tasks: [
-            "<strong>Food Distribution:</strong> After Sunday Service<br><strong>Recipients:</strong> All Aflamers<br><strong>Coordination:</strong> Work with distribution team"
+            "After Sunday Service - Food distribution to all Aflamers"
         ],
         taskDetails: [
             "<strong>Food Distribution:</strong> Assist Dwi Yoehanes<br><strong>Recipients:</strong> All Aflamers<br><strong>Activity:</strong> Distribute meals after Sunday service"
@@ -598,7 +598,7 @@ const weddingHelpers = {
         role: "Food Distribution Assistant & Gift Distribution",
         summary: "Assists with meal distribution and leads guest gift distribution",
         tasks: [
-            "<strong>Food Distribution:</strong> After Sunday Service<br><strong>Recipients:</strong> All Aflamers<br><strong>Coordination:</strong> Work with distribution team",
+            "After Sunday Service - Food distribution to all Aflamers",
             "4:30pm - Distribute gifts to all guests"
         ],
         taskDetails: [
@@ -610,7 +610,7 @@ const weddingHelpers = {
     "George Yuan": {
         role: "Food & Gift Distribution",
         tasks: [
-            "<strong>Pastor Meals:</strong> After Sunday Service<br><strong>Coordination:</strong> Order and pickup food for pastors<br><strong>Team:</strong> Stephanie orders, George picks up",
+            "After Sunday Service - Order and pickup food for pastors",
             "4:30pm - Distribute gifts to all guests"
         ],
         taskDetails: [
@@ -632,7 +632,7 @@ const weddingHelpers = {
     "Stephanie Kho": {
         role: "Food Coordinator & Documents",
         tasks: [
-            "<strong>Pastor Meals:</strong> After Sunday Service<br><strong>Coordination:</strong> Order and pickup food for pastors<br><strong>Team:</strong> Stephanie orders, George picks up",
+            "After Sunday Service - Order and pickup food for pastors",
             "10:10pm - Check belongings"
         ],
         taskDetails: [
@@ -1144,6 +1144,7 @@ function showHelper(name, helper) {
     helperNameDisplay.textContent = `Hello ${name}!`;
     roleDisplay.textContent = helper.role;
     
+    // Show summary only
     if (helper.summary) {
         summaryDisplay.textContent = helper.summary;
         summaryDisplay.style.display = 'block';
@@ -1206,6 +1207,17 @@ function showHelper(name, helper) {
             tasksList.appendChild(li);
         });
     });
+    
+    // Add appreciation message at the bottom
+    const appreciationMessage = document.createElement('li');
+    appreciationMessage.className = 'appreciation-message';
+    appreciationMessage.innerHTML = `
+        Our wedding wouldn't be the same without you!<br>
+        Thank you for your kindness and all that you've done.<br>
+        We are so blessed to have you with us. ❤️<br>
+        <em>– Chenyu & Ping</em>
+    `;
+    tasksList.appendChild(appreciationMessage);
     
     // Show results
     results.classList.remove('hidden');
