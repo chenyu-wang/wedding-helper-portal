@@ -24,23 +24,16 @@ body {
 header {
     text-align: center;
     padding: 40px 0 30px 0;
-    border-bottom: 1px solid #e8e8e8;
     margin-bottom: 40px;
 }
 
-.wedding-logo {
-    width: 200px;
+.logo {
+    margin-bottom: 5px;
+}
+
+.logo-image {
+    max-width: 350px;
     height: auto;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: optimize-contrast;
-    -ms-interpolation-mode: bicubic;
-    max-width: 100%;
-    backface-visibility: hidden;
-    transform: translateZ(0);
 }
 
 h1 {
@@ -63,63 +56,144 @@ main {
 }
 
 .search-section {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
-.search-box {
+.search-form {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1em;
+    font-family: Georgia, serif;
+    background: white;
+    transition: border-color 0.2s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.button-group {
     display: flex;
     gap: 10px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 
-#helperName {
-    flex: 1;
-    min-width: 280px;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-    font-family: 'Georgia', serif;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-#helperName:focus {
-    border-color: #999;
-}
-
-.search-btn {
-    padding: 12px 24px;
+#searchBtn, #clearBtn {
+    padding: 12px 20px;
     background: #333;
     color: white;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
-    font-family: 'Georgia', serif;
+    font-size: 1em;
+    font-family: Georgia, serif;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    white-space: nowrap;
+    transition: background-color 0.2s ease;
 }
 
-.search-btn:hover {
+#searchBtn:hover, #clearBtn:hover {
     background: #555;
 }
 
-.search-results {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 25px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+#searchBtn:disabled, #clearBtn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
 }
 
-.search-results h3 {
+/* Search Results Dropdown */
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    display: none;
+}
+
+.search-result {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-result:last-child {
+    border-bottom: none;
+}
+
+.search-result:hover {
+    background-color: #f8f8f8;
+}
+
+.result-name {
+    font-weight: 500;
+    margin-bottom: 2px;
+    font-size: 16px;
+}
+
+.result-details {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Helper Info Section */
+.helper-info {
+    margin-top: 30px;
+}
+
+.helper-info.hidden {
+    display: none;
+}
+
+.helper-details {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.helper-details h3 {
     color: #333;
     font-size: 22px;
     margin-bottom: 15px;
     font-weight: 400;
+}
+
+.helper-summary {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+.help-note {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+}
+
+.help-note p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 14px;
 }
 
 .role-badge {
@@ -139,12 +213,34 @@ main {
     padding: 0;
 }
 
+.date-header {
+    background: #f8f9fa;
+    margin: 20px 0 10px 0;
+    padding: 12px 15px;
+    border-radius: 4px;
+    border-left: 4px solid #3b82f6;
+}
+
+.date-header h4 {
+    margin: 0;
+    color: #1f2937;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.date-note {
+    margin: 5px 0 0 0;
+    color: #6b7280;
+    font-size: 14px;
+    font-style: italic;
+}
+
 .tasks-list li {
     background: #f9f9f9;
     margin: 8px 0;
     padding: 15px;
     border-radius: 4px;
-    border-left: 3px solid #333;
+    border-left: 3px solid #9ca3af;
     font-size: 15px;
     line-height: 1.5;
 }
@@ -161,12 +257,12 @@ main {
 
 .task-item.clickable:hover {
     background: #f0f0f0;
-    border-left-color: #555;
+    border-left-color: #6b7280;
 }
 
 .task-item.expanded {
-    background: #e8f4f8;
-    border-left-color: #0066cc;
+    background: #f0f9ff;
+    border-left-color: #3b82f6;
 }
 
 .task-main {
@@ -219,7 +315,6 @@ main {
 .documents-section {
     text-align: center;
     padding-top: 30px;
-    border-top: 1px solid #e8e8e8;
 }
 
 .documents-section h2 {
@@ -259,9 +354,20 @@ footer {
     text-align: center;
     padding: 30px 0 20px 0;
     margin-top: 40px;
-    border-top: 1px solid #e8e8e8;
     color: #666;
     font-size: 14px;
+}
+
+.version-info {
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.version-info p {
+    font-size: 12px;
+    color: #888;
+    font-style: italic;
+    margin: 0;
 }
 
 @media (max-width: 600px) {
