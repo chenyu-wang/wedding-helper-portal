@@ -1,5 +1,5 @@
 // Chenyu & Ping Wedding Helper Portal JavaScript
-// Built from Run Sheet V2.1 (Latest Update)
+// Built from Run Sheet V2.3 (Latest Update)
 
 // Bridal Party Mapping
 const bridalParty = {
@@ -11,7 +11,7 @@ const bridalParty = {
     groomsmen: ["Ernest Wijaya", "Lester Aguda"]
 };
 
-// Wedding Helper Data based on the official run sheet V2.0-8
+// Wedding Helper Data based on the official run sheet V2.3
 const weddingHelpers = {
     // Bridal Party
     "Ping Li": {
@@ -19,6 +19,7 @@ const weddingHelpers = {
         summary: "Participates in ceremony, reception activities, and thanks guests throughout the day",
         tasks: [
             "8:30am - Bridesmaids arrive Westin Perth",
+            "Make up starts - Bride and bridesmaids",
             "9:30am - Groom arrives Westin Perth",
             "10:30am - Mums arrive Westin Perth",
             "2:45pm - Bridal cars leaves Westin Perth",
@@ -33,7 +34,8 @@ const weddingHelpers = {
         ],
         taskDetails: [
             "<strong>Location:</strong> Westin Perth<br><strong>Makeup Artist:</strong> Yuko 0430239540<br><strong>Activity:</strong> Makeup starts for bride and bridesmaids",
-            "<strong>Tasks:</strong><br>• Hair styling<br>• Get the room key for Ping's parents",
+            "<strong>Location:</strong> Westin Perth<br><strong>Makeup Artist:</strong> Yuko 0430239540<br><strong>Activity:</strong> Makeup starts for bride and bridesmaids",
+            "<strong>Location:</strong> Westin Perth<br><strong>Tasks:</strong><br>• Hair styling<br>• Get the room key for Ping's parents",
             "<strong>Parents arrival:</strong><br>• Lijiang Yu (Toyota RAV4 White Rego: 1HUQ923)<br>• Qiuzhi Chen (Lexus RX350 Black Rego: P1NGL)",
             "<strong>Transportation:</strong> From Hotel to Cana<br>• Tze's car: Ping & Sabrina<br>• Senjaya's car: Mums, Monica and Angela",
             "<strong>Ceremony entrance coordination:</strong><br><strong>Coordinators:</strong> Like Johanes and Reynard Chan<br><strong>Order:</strong><br>• Angela Fong<br>• Monica Yaw<br>• Sabrina Zhou<br>• Ping Li with her Father",
@@ -52,6 +54,8 @@ const weddingHelpers = {
         summary: "Manages reception item drop-off, participates in ceremony and reception activities",
         tasks: [
             "Friday - Drop off reception items",
+            "Friday - Pick up 2 easels",
+            "Make up starts - Bride and bridesmaids",
             "9:30am - Groom arrives Westin Perth",
             "2:30pm - Groom and groomsmen in position",
             "4:15pm - Bride and groom thank and shake hands with all guests",
@@ -62,8 +66,10 @@ const weddingHelpers = {
             "10:00pm - Thanking guests"
         ],
         taskDetails: [
-            "<strong>Location:</strong> From Chenyu's Place to Beaumonde on the Point<br><strong>Contact:</strong> Nadine Wellinger 0892188088<br><strong>Items to drop:</strong><br>• Table Numbers<br>• Guest Name Cards<br>• Reception Gifts (Adults and Kids)<br>• Welcome sign<br>• Blue Flower Stand<br>• Seating plan<br>• Gifts for parents + pastors<br><strong>Drop location:</strong> Vendor office in second floor",
-            "<strong>Tasks:</strong><br>• Hair styling<br>• Get the room key for Ping's parents",
+            "<strong>Location:</strong> From Chenyu's Place to Beaumonde on the Point<br><strong>Contact:</strong> Nadine Wellinger 0892188088<br><strong>Items to drop:</strong><br>• Table Numbers<br>• Guest Name Cards<br>• Reception Gifts (Adults and Kids)<br>• Welcome sign<br>• Blue Flower Stand<br>• Gifts for parents + pastors<br>• Bubble Guns<br>• One Pair Sandals<br><strong>Drop location:</strong> Vendor office in second floor",
+            "<strong>Pickup:</strong> 2 easels<br><strong>Pickup time:</strong> 5pm<br><strong>Drop off location:</strong> Cana<br><strong>Contact:</strong> Kristen 0416596169<br><strong>Address:</strong> 65 Welcome Meander, Harrisdale WA 6112<br><strong>Payment:</strong> Pay $30 in Cash",
+            "<strong>Location:</strong> Westin Perth<br><strong>Makeup Artist:</strong> Yuko 0430239540<br><strong>Activity:</strong> Makeup starts for bride and bridesmaids",
+            "<strong>Location:</strong> Westin Perth<br><strong>Tasks:</strong><br>• Hair styling<br>• Get the room key for Ping's parents",
             "<strong>Location:</strong> Sanctuary<br><strong>Team:</strong> Chenyu, Roger Chuang, Ernest Wijaya, Lester Aguda<br><strong>Coordinate with:</strong> Like Johanes",
             "<strong>After ceremony photo taking:</strong><br>• Thank all guests with Ping<br>• Prepare to leave for reception",
             "<strong>Reception entrance:</strong><br>• MC (Daniel Gunawan) will announce bridal party entrance<br>• Follow Jenny Sophian's coordination",
@@ -89,7 +95,7 @@ const weddingHelpers = {
         taskDetails: [
             "<strong>Activity:</strong> Makeup session with other bridesmaids<br><strong>Makeup Artist:</strong> Yuko<br><strong>Contact:</strong> 0430239540<br><strong>Location:</strong> With bridal party preparation area",
             "<strong>Transportation:</strong> Tze drives Ping & Sabrina from Westin to Cana House<br><strong>Route:</strong> Hotel to ceremony venue<br><strong>Passengers:</strong> Bride and Maid of Honour",
-            "<strong>Coordination:</strong> Sabrina contacts Like upon arrival<br><strong>Timing:</strong> Like will inform when to enter Cana House<br><strong>Purpose:</strong> Coordinate ceremony entrance timing",
+            "<strong>Coordination:</strong> Sabrina contacts Like once cars arrive Cana<br><strong>Timing:</strong> Like will inform Sabrina when to come in to Cana House<br><strong>Purpose:</strong> Coordinate ceremony entrance timing",
             "<strong>Entrance Coordination:</strong> Like Johanes and Reynard Chan<br><strong>Processional Order:</strong><br>• Angela Fong<br>• Monica Yaw<br>• Sabrina Zhou<br>• Ping Li with her father",
             "<strong>Reception Coordination:</strong> Jenny Sophian<br><strong>Activity:</strong> Bridal party entrance at dinner reception<br><strong>Location:</strong> Reception venue entrance",
             "<strong>Speech Delivery:</strong> Bridesmaids speech<br><strong>Coordination:</strong> Work with MC Daniel Gunawan for proper timing<br><strong>Preparation:</strong> Rehearse speech and confirm timing during reception",
@@ -101,7 +107,7 @@ const weddingHelpers = {
         role: "Best Man",
         summary: "Picks up ceremony items, gives speech, coordinates wedding games, Unity-Candle attendant",
         tasks: [
-            "Saturday morning - Pick up Tiffany chairs and flower pillars",
+            "Saturday 10am - Pick up Tiffany chairs and flower pillars",
             "2:30pm - Groom and groomsmen in position",
             "3:00pm - Unity-Candle attendant",
             "8:30pm - Groomsmen speech(es) and toast",
@@ -109,7 +115,7 @@ const weddingHelpers = {
             "10:10pm - Post-dinner tidy"
         ],
         taskDetails: [
-            "<strong>Pickup coordination:</strong> IC with Lester Aguda<br><strong>Time:</strong> Saturday Morning<br><strong>Items:</strong><br>• Flower Pillars x 4<br>• Tiffany Chairs x 14<br><strong>Vendor:</strong> TMI Studio<br><strong>Contact:</strong> Joyce Jiao 0433 555 567<br><strong>Address:</strong> 2/14 Shields Cr, Booragoon<br><strong>Delivery:</strong> Drop off at Cana House",
+            "<strong>Pickup coordination:</strong> IC with Lester Aguda and Ernest Wijaya<br><strong>Time:</strong> Saturday 10am pickup and drop off at Cana House<br><strong>Items:</strong><br>• Flower Pillars x 4<br>• Tiffany Chairs x 14<br><strong>Vendor:</strong> TMI Studio<br><strong>Contact:</strong> Joyce Jiao 0433 555 567<br><strong>Address:</strong> 2/14 Shields Cr, Booragoon",
             "<strong>Location:</strong> Sanctuary<br><strong>Team:</strong> Chenyu, Ernest, and Lester<br><strong>Coordinate with:</strong> Like Johanes",
             "<strong>Special role:</strong> Unity-Candle attendant during holy matrimony ceremony",
             "<strong>Speech coordination:</strong><br>• Deliver groomsmen speech and lead toast<br>• Coordinate with MC Daniel Gunawan",
@@ -120,9 +126,8 @@ const weddingHelpers = {
 
     "Monica Yaw": {
         role: "Bridesmaid",
-        summary: "Picks up easels, participates in ceremony and reception activities",
+        summary: "Participates in ceremony and reception activities",
         tasks: [
-            "Saturday - Pick up 2 easels",
             "8:30am - Bridesmaids arrive Westin Perth",
             "2:45pm - Bridal cars leave Westin Perth",
             "2:55pm - Bride and bridesmaid in position",
@@ -131,7 +136,6 @@ const weddingHelpers = {
             "10:10pm - Post-dinner tidy"
         ],
         taskDetails: [
-            "<strong>Pickup:</strong> 2 easels<br><strong>Drop off location:</strong> Cana<br><strong>Contact:</strong> Anne Ibanez 0416596169<br><strong>Address:</strong> Harrisdale",
             "<strong>Activity:</strong> Makeup session with other bridesmaids<br><strong>Makeup Artist:</strong> Yuko<br><strong>Contact:</strong> 0430239540<br><strong>Location:</strong> With bridal party preparation area",
             "<strong>Transportation:</strong> Senjaya drives from Westin to Cana<br><strong>Passengers:</strong><br>• Lijiang Yu (Chenyu's mum)<br>• Qiuzhi Chen (Ping's mum)<br>• Monica Yaw<br>• Angela Fong",
             "<strong>Entrance Coordination:</strong> Like Johanes and Reynard Chan<br><strong>Processional Order:</strong><br>• Angela Fong<br>• Monica Yaw<br>• Sabrina Zhou<br>• Ping Li with her father",
@@ -187,13 +191,13 @@ const weddingHelpers = {
         role: "Groomsman",
         summary: "Assists with Tiffany chair pickup, participates in ceremony and reception activities",
         tasks: [
-            "Saturday - Pick up Tiffany chairs and flower pillars",
+            "Saturday 10am - Pick up Tiffany chairs and flower pillars",
             "2:30pm - Groom and groomsmen in position",
             "8:30pm - Groomsmen speech(es) and toast",
             "10:10pm - Post-dinner tidy"
         ],
         taskDetails: [
-            "<strong>Coordination:</strong> With Roger Chuang (IC)<br><strong>Time:</strong> Saturday Morning<br><strong>Items:</strong><br>• Flower Pillars x 4<br>• Tiffany Chairs x 14<br><strong>Vendor:</strong> TMI Studio<br><strong>Contact:</strong> Joyce Jiao 0433 555 567<br><strong>Address:</strong> 2/14 Shields Cr, Booragoon<br><strong>Delivery:</strong> Drop off at Cana House",
+            "<strong>Coordination:</strong> With Roger Chuang (IC) and Ernest Wijaya<br><strong>Time:</strong> Saturday 10am pickup and drop off at Cana House<br><strong>Items:</strong><br>• Flower Pillars x 4<br>• Tiffany Chairs x 14<br><strong>Vendor:</strong> TMI Studio<br><strong>Contact:</strong> Joyce Jiao 0433 555 567<br><strong>Address:</strong> 2/14 Shields Cr, Booragoon",
             "<strong>Position:</strong> Stand with Chenyu, Roger, and Ernest at sanctuary<br><strong>Coordination:</strong> Work with Like Johanes<br><strong>Role:</strong> Support groom's party during ceremony",
             "<strong>Speech Delivery:</strong> Groomsmen speech with Roger and Ernest<br><strong>Coordination:</strong> MC Daniel Gunawan coordinates timing<br><strong>Team:</strong> Work with Roger Chuang and Ernest Wijaya",
             "<strong>Cleanup Activities:</strong><br>• Post-dinner cleanup<br>• Wedding items organization<br><strong>Team:</strong> Work with groomsmen and other helpers"
@@ -210,7 +214,7 @@ const weddingHelpers = {
             "2:55pm - Bride and bridesmaid in position"
         ],
         taskDetails: [
-            "<strong>Car arrival coordination:</strong><br>• Sabrina will contact Like once cars arrive<br>• Like will inform Sabrina when to come in to Cana House",
+            "<strong>Car arrival coordination:</strong><br>• Sabrina will contact Like once cars arrive Cana<br>• Like will inform Sabrina when to come in to Cana House<br><strong>Team:</strong> Like Johanes (IC), Sabrina Zhou, Tze Ong, Senjaya Tresna",
             "<strong>Processional coordination:</strong><br><strong>Ring Bearer:</strong> Harrison Clark<br><strong>Flower Girl:</strong> Grace Win<br><strong>Coordinate with:</strong> Reynard Chan",
             "<strong>Bridal party entrance order:</strong><br><strong>Coordinator:</strong> Reynard Chan<br><strong>Order:</strong><br>1. Angela Fong<br>2. Monica Yaw<br>3. Sabrina Zhou<br>4. Ping Li with her father"
         ]
@@ -337,7 +341,7 @@ const weddingHelpers = {
         ],
         taskDetails: [
             "<strong>Carpark team coordination:</strong><br>• Rudy Rusli<br>• Rudy Suwarno<br>• Kocdal Antipas<br>• Tomas Aguda<br>• Benny Suwarno<br>• Harry Chen",
-            "<strong>Reserved parking for VIP vehicles:</strong><br><strong>Parents Cars:</strong><br>• White Toyota RAV4 (Rego: 1HUQ923)<br>• Black Lexus RX350 (Rego: P1NGL)<br><strong>Bridal Cars:</strong><br>• White Tesla Model Y (Rego: 1IOD288)<br>• Grey Mitsubishi Outlander (Rego: 1GYL921)<br><strong>Photographer's Car:</strong><br>• White Honda Accord (Rego: 1EUB613)"
+            "<strong>Reserved parking for VIP vehicles:</strong><br><strong>Parents Cars:</strong><br>• White Toyota RAV4 (Rego: 1HUQ923)<br>• Black Lexus RX350 (Rego: P1NGL)<br><strong>Bridal Cars:</strong><br>• White Tesla Model Y (Rego: 1IOD288)<br>• Grey Mitsubishi Outlander (Rego: 1GYL921)<br><strong>Photographer's Car:</strong><br>• White Honda Accord (Rego: 1EUB613)<br><strong>Note:</strong> Reserve 5 parking bays total for these VIP vehicles"
         ]
     },
 
@@ -464,7 +468,7 @@ const weddingHelpers = {
         taskDetails: [
             "<strong>Setup coordination:</strong><br><strong>Items to setup:</strong><br>• Signing table<br>• Candle table<br>• Communion table<br>• Tiffany chairs<br><strong>Team partner:</strong> Kok Yee Wee",
             "<strong>Sanctuary usher duties:</strong><br><strong>Team:</strong> Priscilla Suwarno (IC), Jean Gao, Jacquelyn Chong, William Yong, Kok Yee Wee",
-            "<strong>Item transport:</strong><br><strong>Items:</strong><br>• Photo canvas<br>• Easels x 2<br>• Reception decorations<br><strong>Team:</strong> William & Joanne Yeung",
+            "<strong>Item transport:</strong><br><strong>Items:</strong><br>• Photo canvas and Reception decorations<br><strong>Team:</strong> William & Joanne Yeung",
             "<strong>Reception carpark duties:</strong><br>• At the front with Kok Yee Wee<br>• Coordinate guest parking at dinner reception"
         ]
     },
@@ -503,15 +507,17 @@ const weddingHelpers = {
         summary: "Drives bride and manages all wedding party transportation",
         tasks: [
             "2:00pm - Bridal cars leaves Cana House",
+            "2:30pm - Bridal cars leaves Westin Perth to drive to Cana",
             "2:45pm - Bridal cars leaves Westin Perth",
             "4:30pm - Bride, groom and bridal party leave Cana",
             "6:00pm - Bridal party cars arrive dinner reception"
         ],
         taskDetails: [
-            "<strong>Departure coordination:</strong><br>• Coordinate bridal cars departure from Cana House<br>• Work with Senjaya Tresna",
-            "<strong>Hotel to Cana transport:</strong><br><strong>Tze's car:</strong> Ping & Sabrina<br><strong>Senjaya's car:</strong> Mums (Lijiang Yu & Qiuzhi Chen), Monica and Angela",
-            "<strong>Cana to reception transport:</strong><br><strong>Tze's car:</strong> Bride & Groom<br><strong>Senjaya's car:</strong> Bridal Party",
-            "<strong>Reception arrival:</strong><br><strong>Tze:</strong> Bride & Groom<br><strong>Senjaya:</strong> Bridal Party"
+            "<strong>Departure coordination:</strong><br>• Coordinate bridal cars departure from Cana House<br>• Drive to Westin Perth<br>• Work with Senjaya Tresna<br>• Contact Sabrina once arrives Westin Perth Lobby",
+            "<strong>Return trip coordination:</strong><br>• Coordinate bridal cars departure from Westin Perth<br>• Drive to Cana House<br>• Work with Senjaya Tresna<br>• Prepare for ceremony transportation",
+            "<strong>Hotel to Cana transport:</strong><br><strong>Tze's car:</strong> Ping & Sabrina<br><strong>Senjaya's car:</strong> Mums (Lijiang Yu & Qiuzhi Chen), Monica and Angela<br><strong>Note:</strong> Sabrina contact Like once the cars arrive Cana",
+            "<strong>Cana to reception transport:</strong><br><strong>Route:</strong> From Cana to Phototaking and Reception<br><strong>Tze's car:</strong> Bride & Groom and Sabrina<br><strong>Senjaya's car:</strong> Bridal Party",
+            "<strong>Reception arrival:</strong><br><strong>Coordination:</strong> Dropped off Bride and Groom to dinner reception place then parked the car<br><strong>Parking payment:</strong> Ask Chenyu and Lester to pay for parking via app"
         ]
     },
 
@@ -519,14 +525,18 @@ const weddingHelpers = {
         role: "Bridal Cars Driver",
         summary: "Drives parents and bridesmaids between venues",
         tasks: [
+            "2:00pm - Bridal cars leaves Cana House",
+            "2:30pm - Bridal cars leaves Westin Perth to drive to Cana",
             "2:45pm - Bridal cars leaves Westin Perth",
-            "4:30pm - Bride, groom and bridal party leave Cana",  
+            "4:30pm - Bride, groom and bridal party leave Cana",
             "6:00pm - Bridal party cars arrive dinner reception"
         ],
         taskDetails: [
-            "<strong>Transportation:</strong> Senjaya drives from Westin to Cana<br><strong>Passengers:</strong><br>• Mums (Lijiang Yu & Qiuzhi Chen)<br>• Monica Yaw<br>• Angela Fong",
-            "<strong>Transportation:</strong> Senjaya drives bridal party<br><strong>Route:</strong> From Cana to phototaking and reception<br><strong>Passengers:</strong> Bridal party members",
-            "<strong>Transportation:</strong> Senjaya drives bridal party<br><strong>Destination:</strong> Dinner reception<br><strong>Purpose:</strong> Ensure timely arrival for reception"
+            "<strong>Departure coordination:</strong><br>• Assist Tze Ong with bridal cars departure from Cana House<br>• Drive to Westin Perth<br>• Work with Tze Ong (IC)<br>• Contact Sabrina once arrives Westin Perth Lobby",
+            "<strong>Return trip coordination:</strong><br>• Assist Tze Ong with bridal cars departure from Westin Perth<br>• Drive to Cana House<br>• Prepare for ceremony transportation",
+            "<strong>Transportation:</strong> Senjaya drives from Westin to Cana<br><strong>Passengers:</strong><br>• Mums (Lijiang Yu & Qiuzhi Chen)<br>• Monica Yaw<br>• Angela Fong<br><strong>Coordination:</strong> Sabrina contact Like once the cars arrive Cana",
+            "<strong>Transportation:</strong> Senjaya drives bridal party<br><strong>Route:</strong> From Cana to Phototaking and Reception<br><strong>Passengers:</strong> Bridal party members",
+            "<strong>Transportation:</strong> Senjaya drives bridal party<br><strong>Destination:</strong> Dinner reception<br><strong>Coordination:</strong> Ensure timely arrival for reception"
         ]
     },
 
@@ -553,7 +563,7 @@ const weddingHelpers = {
         ],
         taskDetails: [
             "<strong>Saturday decoration:</strong><br><strong>Coordinator:</strong> Leena Chai (IC)<br><strong>Team:</strong> Natalie Tan, IeChi Suen, Tiffany Tan (after 1pm), bridesmaids and groomsmen",
-            "<strong>Flower pickup:</strong><br><strong>Items:</strong><br>• Bridal bouquet x 1<br>• Groom's buttonhole x 1<br><strong>Vendor:</strong> Chatsworth Flowers<br><strong>Contact:</strong> Jacqueline 0400784248<br><strong>Address:</strong> 96 Beaufort Street, Perth<br><strong>Drop off location:</strong> Photocopy room",
+            "<strong>Flower pickup:</strong><br><strong>Pickup time:</strong> From 8:30am to 10am<br><strong>Items:</strong><br>• Bridal bouquet x 1<br>• Groom's buttonhole x 1<br><strong>Vendor:</strong> Chatsworth Flowers<br><strong>Contact:</strong> Jacqueline (08) 9227 8080<br><strong>Address:</strong> 475 Beaufort St, Highgate WA 6003<br><strong>Drop off location:</strong> Photocopy room",
             "<strong>Signing table setup:</strong><br>• Set up signing table decoration<br>• Touch up Saturday decoration<br><strong>Team:</strong> IeChi Suen and Priscilla Suwarno",
             "<strong>Reception setup check:</strong><br>• Check reception setup<br><strong>Team:</strong> Priscilla Suwarno and Jacquelyn Chong"
         ]
@@ -652,7 +662,7 @@ const weddingHelpers = {
             "8:00pm - Direct bride and groom to assigned table for photo taking"
         ],
         taskDetails: [
-            "<strong>Setup coordination:</strong> IC with Maria Gunawan<br><strong>Items to collect from Function manager Des:</strong><br>• Welcome Sign<br>• Blue Flower Stand<br>• Gifts for Pastors and Parents<br><em>(Pass gifts to Angela Fong after Bridal Party Entry)</em><br><strong>Items to transport from Cana:</strong><br>• Photo Canvas<br>• Easel x 2<br>• Flower Pillars x 4",
+            "<strong>Setup coordination:</strong> IC with Maria Gunawan<br><strong>Items to collect from Function manager Des:</strong><br>• Welcome Sign<br>• Blue Flower Stand<br>• Gifts for Pastors and Parents<br><em>(Pass gifts to Angela Fong after Bridal Party Entry)</em><br>• Two Camera shape Bubble Guns<br><em>(Pass them to George and Julia before First Dance)</em><br>• One Pair Sandals<br><em>(For Ping to wear during makeup touchup)</em><br><strong>Items transport from Cana:</strong><br>• Photo Canvas<br>• Flower Pillars x 4",
             "<strong>Venue Coordination:</strong> Work with Function Manager<br><strong>Activities:</strong><br>• Ball room opening<br>• Guest entry coordination<br><strong>Location:</strong> Dinner reception venue", 
             "<strong>Entrance Coordination:</strong> Bridal party in position<br><strong>Activity:</strong> Coordinate bridal party entrance<br><strong>Timing:</strong> Reception entrance sequence",
             "<strong>Photo Coordination:</strong> Direct bride and groom to assigned tables<br><strong>Activity:</strong> Photo taking with guests<br><strong>Team:</strong> Work with Maria Gunawan<br><strong>Purpose:</strong> Systematic guest photos"
@@ -719,7 +729,7 @@ const weddingHelpers = {
         taskDetails: [
             "<strong>Reception setup:</strong><br>• Setup reception table<br>• Setup wedding photo canvas<br><strong>Team partner:</strong> Tiffany Tan",
             "<strong>Gift coordination:</strong><br>• Pass gifts from guests to Chenyu's parents after ceremony",
-            "<strong>Item transport:</strong><br><strong>Items:</strong><br>• Photo canvas<br>• Easels x 2<br>• Reception decorations<br><strong>Team:</strong> William & Joanne",
+            "<strong>Item transport:</strong><br><strong>Items:</strong><br>• Photo canvas and Reception decorations<br><strong>Team:</strong> William & Joanne",
             "<strong>Guest register table:</strong><br>• Setup and decoration<br><strong>Team:</strong> IeChi Suen (IC) and Tiffany Tan",
             "<strong>Reception coordination:</strong> IC (In Charge)<br><strong>Team partner:</strong> Tiffany Tan<br><strong>Tasks:</strong><br>• Pack away table decoration after bride & groom entry<br>• Move gifts from guests to bridal salon<br>• Pass Angpao to Chenyu's mum after bride & groom entry"
         ]
@@ -822,15 +832,15 @@ const weddingHelpers = {
 
     // Parents
     "Lijiang Yu": {
-        role: "Chenyu's Mum",
-        summary: "Participates in ceremony and reception activities",
+        role: "Chenyu's Mum / 宸瑜妈妈",
+        summary: "Participates in ceremony and reception activities / 参加婚礼仪式和酒席活动",
         tasks: [
-            "10:30am - Mums arrive Westin Perth",
-            "2:45pm - Travel from Westin to Cana"
+            "10:30am - Mums arrive Westin Perth / 上午10:30 - 妈妈们到达珀斯威斯汀酒店",
+            "2:45pm - Travel from Westin to Cana / 下午2:45 - 从威斯汀酒店出发到Cana教堂"
         ],
         taskDetails: [
-            "Parents will drive to hotel. Toyota RAV4 White Rego: 1HUQ923",
-            "Senjaya drives mums, Monica and Angela from Westin to Cana. Joanne brings Angpao to Chenyu's mum at reception"
+            "<strong>Transportation / 交通安排:</strong><br>Parents will drive to hotel / 父母自己开车到酒店<br><strong>Vehicle / 车辆:</strong> Toyota RAV4 White Rego: 1HUQ923<br><strong>Chinese:</strong> 丰田RAV4白色车牌：1HUQ923",
+            "<strong>Transportation to ceremony / 去教堂的交通:</strong><br>Senjaya drives mums, Monica and Angela from Westin to Cana / Senjaya开车载妈妈们、Monica和Angela从威斯汀到Cana教堂<br><strong>Reception note / 酒席注意事项:</strong> Joanne brings Angpao to Chenyu's mum at reception / Joanne会在酒席时把红包交给宸瑜妈妈"
         ]
     },
 
@@ -902,7 +912,7 @@ const weddingHelpers = {
             "9:15pm - Serve wedding cake"
         ],
         taskDetails: [
-            "<strong>Items to provide to Jenny Sophian:</strong><br>• Welcome Sign<br>• Blue Flower Stand<br>• Gifts for Pastors and Parents<br><strong>Note:</strong> Pass gifts to Angela Fong after Bridal Party Entry",
+            "<strong>Items to provide to Jenny Sophian:</strong><br>• Welcome Sign<br>• Blue Flower Stand<br>• Gifts for Pastors and Parents<br><em>(Pass them to Angela Fong after Bridal Party Entry)</em><br>• Two Camera shape Bubble Guns<br><em>(Pass them to George and Julia before First Dance)</em><br>• One Pair Sandals<br><em>(For Ping to wear during makeup touchup)</em>",
             "<strong>Service:</strong> Serve canapes during pre-reception period<br><strong>Venue:</strong> Beaumonde on the Point<br><strong>Timing:</strong> Pre-dinner service",
             "<strong>Package Service:</strong> Soft drink package commences<br><strong>Duration:</strong> Water will be provided to end of event<br><strong>Venue:</strong> Beaumonde on the Point",
             "<strong>Food Service:</strong> Serve entree<br><strong>Special Note:</strong> Wait until prayer finishes<br><strong>Venue:</strong> Beaumonde on the Point",
@@ -980,7 +990,7 @@ const weddingHelpers = {
     }
 };
 
-// Google Docs URLs (updated for V2.1)
+// Google Docs URLs (updated for V2.3)
 const documentUrls = {
     runsheet: "https://docs.google.com/document/d/1bjHkp6Isy0Y5vtlA9ffmskrmnI79rLGREyzwOXy4Kh0/edit?usp=sharing",
     roles: "https://docs.google.com/document/d/1hBAxPbhZWKcIRaPYr3uxY4y1DMpFcDR4I1d7UgwlMXs/edit?usp=sharing"
